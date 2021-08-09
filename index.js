@@ -18,7 +18,7 @@ btn.onclick = () => {
   // Map body
   content.body.forEach((item, index) => {
     // Get start time
-    const from = secToTimer(item.from);
+    const from = secToTimer(item.from !== undefined ? item.from : 0);
     // Get end time
     const to = secToTimer(item.to);
     // Line
